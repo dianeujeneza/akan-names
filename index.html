@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Akan Name Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <div>
-        <form action="/action_page.php">
-            First name:<br>
-            <input type="text" name="firstname" placeholder="enter your first name"><br>
-            Last name:<br>
-            <input type="text" name="lastname" value="Mouse"><br><br>
-            <input type="submit" value="Submit">
-          </form>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Akan Name Calculator</h1>
+        </div>
+
+        <div>
+            <form action="/action_page.php">
+                <!-- <form> -->
+                    <label for="">Day:</label><br>
+                    <input type="datetime" name="dob" placeholder="month"><br><br>
+                    <label for="">Day:</label><br>
+                    <input type="datetime" name="dob" placeholder="month"><br><br>
+                    <label for="">Day:</label><br>
+                    <input type="datetime" name="dob" placeholder="month"><br><br>
+                <!-- </form> -->
+                <label for="">Gender:</label><br>
+                <select>
+                    <option value="choose your gender" selected>-select your gender-</option>
+                    <option value="Male" >Male</option>
+                    <option value="Female" >Female</option>
+                </select><br/><br/>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>
