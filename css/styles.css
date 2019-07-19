@@ -10,10 +10,18 @@ html>body{
 }
 h2{
     text-transform: uppercase;
+    font-style: italic;
+    color: rgb(53, 79, 90);
+    font-weight: 900;
 }
 h1{
     text-align: center;
     color: rgb(26, 116, 56);
     font-weight: bolder;
     text-transform: capitalize;
+    font-style: oblique;
+}
+
+.card-body{
+    background-color: rgba(180, 179, 89, 0.9);
 }
