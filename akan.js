@@ -1,16 +1,20 @@
 function akan(){
-    var DD = parseInt(document.getElementsByClassName('day').value);
-    var MM = parseInt(document.getElementsByClassName('month').value);
-    var YY = parseInt(document.getElementsByClassName('year').value);
+    var DD = parseInt(document.getElementById('day').value);
+    var MM = parseInt(document.getElementById('month').value);
+    var YY = parseInt(document.getElementById('year').value);
     var CC = (YY - 1) / 100 + 1;
     var daysoftheweek = (CC / 4 - 2 * CC -1 + 5 * YY / 4 + 26 * (MM + 1) / 10 + DD) % 7;
     
-    document.getElementById('display').innerHTML = Math.round(daysoftheweek);
     console.log(daysoftheweek);
+    document.getElementById('display').innerHTML = Math.round(daysoftheweek);
 
-    var fille = [];
-    var gar = [];
-    var select = document.getElementById('choose').value;
+    var gar = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var fille = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+    var select= document.querySelector('input[name="gender"]:checked').value;
+    // console.log(gender);
+
+    // var select = document.getElementById('choose').value;
 
     if(select === "male" ){
         alert(gar[Math.round(daysoftheweek)]);

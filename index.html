@@ -15,21 +15,28 @@
         <div>
             <form action="/action_page.php">
                 <label for="day">Day:</label><br>
-                <input type="date" class="day" placeholder="day(dd)"><br><br>
+                <input type="number" id="day" placeholder="day(dd)"><br><br>
+
                 <label for="month">Month:</label><br>
-                <input type="date" class="month" placeholder="month(mm)"><br><br>
+                <input type="number" id="month" placeholder="month(mm)"><br><br>
+
                 <label for="year">Year:</label><br>
-                <input type="date" class="year" placeholder="year"><br><br>
+                <input type="number" id="year" placeholder="year"><br><br>
+
                 <label for="gender">Gender:</label><br>
-
-                <select id="choose">
+                <!-- <select id="choose">
                     <option value="choose your gender" selected>-select your gender-</option>
-                    <option value="Male" >Male</option>
-                    <option value="Female" >Female</option>
-                </select><br/><br/>
+                    <option value="male" >Male</option>
+                    <option value="female" >Female</option>
+                </select><br/><br/> -->
+                <div id="radio">
+                    <input type="radio" name="gender" value="male" id="choose"> Male<br>
+                    <input type="radio" name="gender" value="female" id="choose"> Female<br>
+                </div>
 
-                <input type="button" onclick="akan()" value="Calculate">
-                <label id="display"></label>
+                <input type="button" onclick="akan()" value="Calculate"><br><br>
+                <p><span>The day you were born was :</span>    <label id="display"></label></p>
+                
             </form>
         </div>
     </div>
