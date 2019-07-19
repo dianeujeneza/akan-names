@@ -21,9 +21,6 @@ function akan(){
     var fille = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     var select= document.querySelector('input[name="gender"]:checked').value;
-    // console.log(gender);
-
-    // var select = document.getElementById('choose').value;
 
     if(select === "male" ){
         alert(gar[Math.round(daysoftheweek)]);
