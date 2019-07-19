@@ -4,6 +4,7 @@
     <title>Akan Name Website</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="akan.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,20 +15,21 @@
         <div>
             <form action="/action_page.php">
                 <!-- <form> -->
-                    <label for="">Day:</label><br>
-                    <input type="number" name="dob" placeholder="month"><br><br>
-                    <label for="">Month:</label><br>
-                    <input type="datetime" name="dob" placeholder="month"><br><br>
-                    <label for="">Year:</label><br>
-                    <input type="datetime" name="dob" placeholder="month"><br><br>
+                    <label for="day">Day:</label><br>
+                    <input type="date" class="day" name="dob" placeholder="month"><br><br>
+                    <label for="month">Month:</label><br>
+                    <input type="month" class="month" name="dob" placeholder="month"><br><br>
+                    <label for="year">Year:</label><br>
+                    <input type="year" class="year" name="dob" placeholder="month"><br><br>
                 <!-- </form> -->
                 <label for="">Gender:</label><br>
-                <select>
+                <select id="choose">
                     <option value="choose your gender" selected>-select your gender-</option>
                     <option value="Male" >Male</option>
                     <option value="Female" >Female</option>
                 </select><br/><br/>
-                <input type="submit" value="Submit">
+                <input type="button" onclick="akan()" value="Calculate">
+                <label id="display"></label>
             </form>
         </div>
     </div>
