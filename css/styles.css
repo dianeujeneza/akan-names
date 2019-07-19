@@ -1,7 +1,5 @@
-.form{
-    border: 2px solid black;
-    display: flex;
-    text-align: center;
-    width: 500px;
-    height: 500px;
+body{
+    background-image: url("https://cdn.face2faceafrica.com/www/wp-content/uploads/2016/06/061516-heru-ausar-auset-736x640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
