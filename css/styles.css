@@ -1,8 +1,8 @@
-body{
+html>body{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mcxQZP6xWxPqXXxtdyQ1a2Ja_gJjobCRqm9fDHB-GkikbxkH");
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 30px;
+    font-size: 130%;
 }
 .form{
     background-color: rgba(219, 215, 215, 0.9);
@@ -10,4 +10,10 @@ body{
 }
 h2{
     text-transform: uppercase;
+}
+h1{
+    text-align: center;
+    color: rgb(26, 116, 56);
+    font-weight: bolder;
+    text-transform: capitalize;
 }
