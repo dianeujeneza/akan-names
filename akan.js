@@ -8,6 +8,15 @@ function akan(){
     console.log(daysoftheweek);
     document.getElementById('display').innerHTML = Math.round(daysoftheweek);
 
+    if( DD <= 0 || DD >31 ){
+
+        alert("Please enter number from 1-31");
+
+    }else if( MM <= 0 || MM > 12){
+        alert("Please enter valid month");
+
+    }
+
     var gar = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var fille = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
